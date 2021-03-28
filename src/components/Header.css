@@ -1,0 +1,62 @@
+ /* aplicação de variaveis */
+:root {
+  --bg-color: #ccc;
+}
+
+/* containerda aplicação */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-color);
+}
+
+/* area do login */
+.area-login {
+  width: 350px;
+}
+
+.area-login p {
+  font-size: 2rem;
+  margin: 1.6rem 0;
+}
+
+.area-login button {
+  height: 50px;
+  border: 1px solid var(--bg-color);
+  border-radius: 25px;
+  width: 200px;
+  font-weight: bold;
+}
+
+/* area do cadastro */
+.form-cadastro {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.form-cadastro input {
+  padding: 10px;
+  margin: 18px;
+  border: none;
+  border-bottom: 2px solid var(--bg-color);
+}
+
+.form-cadastro button {
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  width: 200px;
+  font-weight: bold;
+}
+
+.form-cadastro h3 {
+  text-align: left;
+}
