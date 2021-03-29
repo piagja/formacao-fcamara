@@ -25,10 +25,15 @@
 
 .area-login button {
   height: 50px;
-  border: 1px solid var(--bg-color);
+  border: none;
   border-radius: 25px;
   width: 200px;
   font-weight: bold;
+}
+
+.area-login button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
 }
 
 /* area do cadastro */
@@ -55,6 +60,11 @@
   border-radius: 25px;
   width: 100%;
   font-weight: bold;
+}
+
+.form-cadastro button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 }
 
 .form-cadastro h3 {

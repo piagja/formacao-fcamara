@@ -24,7 +24,11 @@ export default function Main () {
         </div>
 
         <div className='imagem'>
-          <img src='https://bslacademiadelideres.com.br/wp-content/uploads/2020/07/placeholder.png?v=9a5864c8040a' className='img-valores' alt='Imagem valores' />
+          <img
+            src='https://bslacademiadelideres.com.br/wp-content/uploads/2020/07/placeholder.png?v=9a5864c8040a'
+            className='img-valores'
+            alt='Imagem valores'
+          />
         </div>
 
       </div>
