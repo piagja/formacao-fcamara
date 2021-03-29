@@ -1,0 +1,12 @@
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

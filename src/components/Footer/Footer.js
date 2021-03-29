@@ -1,4 +1,5 @@
 import React from 'react'
+import { CardFooter } from '../CardFooter/CardFooter'
 import './Footer.css'
 
 export default function Footer () {
@@ -13,8 +14,10 @@ export default function Footer () {
     * ------------------------------------------------------------
     * Pode abrir o Header.js e o Header.css para se guiar também
     */
-    <div>
-      Footer
+    <div className='container-footer'>
+
+      <CardFooter />
+
     </div>
   )
 }
