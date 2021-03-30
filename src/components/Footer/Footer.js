@@ -16,7 +16,9 @@ export default function Footer () {
     */
     <div className='container-footer'>
 
-      <CardFooter />
+      <CardFooter nome='Gabriel' />
+      <CardFooter nome='Pedro' />
+      <CardFooter nome='Catarina' />
 
     </div>
   )

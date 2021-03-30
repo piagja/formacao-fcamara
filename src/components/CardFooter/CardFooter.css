@@ -2,13 +2,15 @@
   height: 350px;
   width: 350px;
   box-shadow: 1px 1px 10px rgb(83, 71, 90);
+  background-color: #C4C4C4;
   display: flex;
   align-items: space-around;
   justify-content: center;
   padding: 10px;
   margin: 20px;
-  border-radius: 25px;
+  border-radius: 15px;
   border: none;
+  overflow: auto;
 }
 
 .card-depoimento:hover {
@@ -32,4 +34,14 @@
 
 .card-items__profile {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  
+}
+
+.card-items__profile h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: -10px;
 }

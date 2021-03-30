@@ -1,7 +1,7 @@
 import React from 'react'
 import './CardFooter.css'
 
-const CardFooter = () => {
+const CardFooter = (props) => {
   return (
     <div className='card'>
       <div className='card-depoimento'>
@@ -13,9 +13,8 @@ const CardFooter = () => {
             className='card-avatar__image'
           />
           <div className='card-items__profile'>
-            <p>Mensagem</p>
-            <p>Nome</p>
-            <p>Idade</p>
+            <h2>{props.nome}</h2>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab."</p>
           </div>
         </div>
 
