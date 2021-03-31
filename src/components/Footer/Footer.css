@@ -1,4 +1,4 @@
-.container-footer {
+.container-footer-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,4 +9,32 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.footer-title {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.footer-entrega {
+  height: 350px;
+  background-color: #bbb;
+}
+
+.footer-entrega h2 {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.footer-entrega_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-entrega_area hr {
+  width: 80%;
+  margin-top: 40px;
 }

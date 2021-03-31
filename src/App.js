@@ -1,18 +1,12 @@
 import React from 'react'
-import Dashboard from './components/Dashboard/Dashboard'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
+import Routes from './routes'
 
 import './styles/global.css'
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
-      <Dashboard />
+      <Routes />
     </>
   )
 }

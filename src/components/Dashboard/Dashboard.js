@@ -1,9 +1,10 @@
 import React from 'react'
 import CardDashboard from './CardDashboard/CardDashboard'
+import { Link } from 'react-router-dom'
 import './Dashboard.css'
 
 export default function Dashboard () {
-  const getCadastro = localStorage.getItem('Cadastro')
+  const getNome = JSON.parse(localStorage.getItem('Cadastro'))
 
   return (
     <div className='container-dashboard'>
@@ -13,11 +14,11 @@ export default function Dashboard () {
 
         <div className='dashboard-sidenav__info'>
           <br />
-          <p>Bem vindo usuário</p>
+          <p>Bem vindo {getNome.nome}</p>
           <br />
-          <p>Email</p>
+          <p>{getNome.email}</p>
           <br />
-          <button>Home</button>
+          <Link to='/'><button>Home</button></Link>
         </div>
 
         <div className='buttons'>

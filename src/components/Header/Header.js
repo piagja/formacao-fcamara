@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
+import { Link } from 'react-router-dom'
 
 import './Header.css'
 
@@ -27,7 +28,7 @@ export default function Header () {
       <div className='area-login'>
         <p>Já faz parte da nossa família?</p>
         <p>Então sinta-se Bem Vindo</p>
-        <button>Faça seu Login</button>
+        <Link to='/dashboard'><button>Faça seu Login</button></Link>
       </div>
 
       <div className='area-cadastro'>

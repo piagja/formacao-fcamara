@@ -1,9 +1,7 @@
 /** area inteira do dashboard */
 
 .container-dashboard {
-  margin-top: 50px;
   height: 100vh;
-
   display: flex;
 }
 
@@ -11,7 +9,7 @@
 
 .dashboard-sidenav {
   background-color: #ccc;
-  height: 100vh;
+  height: 100%;
   width: 300px;
   display: flex;
   flex-direction: column;
