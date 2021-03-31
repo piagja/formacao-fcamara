@@ -23,7 +23,6 @@
 }
 
 .imagem {
-  background-color: #8F8D8E;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,4 +50,44 @@ hr {
 .descricao-processo, .a-ganhar {
   font-size: 3rem;
   margin-top: 4rem;
+}
+
+/** media queries **/
+
+@media only screen and (max-width: 1024px) {
+  .container-main {
+    margin-top: 50px;
+  }
+  .valores-imagem {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  
+  .valores {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .valores p {
+    font-size: 1rem;
+    margin: 12px;
+  }
+
+  .img-valores {
+    height: 300px;
+    width: 350px;
+  }
+
+  .descricao-ganhar {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .descricao-processo, .a-ganhar {
+    font-size: 1.2rem;
+    margin: 2rem;
+  }
 }

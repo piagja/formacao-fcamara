@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-around;
   height: 100vh;
-  min-width: 100vw;
+  width: 100%;
   background-color: var(--bg-color);
 }
 
@@ -72,16 +72,37 @@
 }
 
 /** media queries - breakpoint */
-@media only screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .container {
     display: flex;
     flex-direction: column-reverse;
-    width: 110%;
+  }
+
+  .form-cadastro {
+    padding: 12px;
+    height: 400px;
+  }
+
+  .form-cadastro input {
+    padding: 8px;
+    margin: 8px;
+    border: none;
+    border-bottom: 1px solid var(--bg-color);
+  }
+
+  .form-cadastro button {
+    margin-top: 15px;
   }
 
   .area-login {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .area-login p {
+    font-size: 1.2rem;
+    margin: 10px 0;
   }
 }

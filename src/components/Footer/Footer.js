@@ -1,5 +1,5 @@
 import React from 'react'
-import CardFooter from '../CardFooter/CardFooter'
+import CardFooter from './CardFooter/CardFooter'
 import './Footer.css'
 
 export default function Footer () {
