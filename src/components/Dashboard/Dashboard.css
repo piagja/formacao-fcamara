@@ -29,6 +29,11 @@
   font-weight: bold;
 }
 
+.dashboard-sidenav__info button:hover {
+  background-color: #aaa;
+  transition: all 0.3s;
+}
+
 .dashboard-logo {
   height: 170px;
   width: 170px;
@@ -39,11 +44,6 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-}
-
-button:hover {
-  background-color: #aaa;
-  transition: all 0.3s;
 }
 
 .buttons button {
