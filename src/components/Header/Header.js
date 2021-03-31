@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { data } from '../../services/api'
 import { useForm } from 'react-hook-form'
 
 import './Header.css'

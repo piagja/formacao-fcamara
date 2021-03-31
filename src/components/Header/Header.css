@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-around;
   height: 100vh;
-  width: 100%;
+  min-width: 100vw;
   background-color: var(--bg-color);
 }
 
@@ -69,4 +69,19 @@
 
 .form-cadastro h3 {
   text-align: left;
+}
+
+/** media queries - breakpoint */
+@media only screen and (max-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 110%;
+  }
+
+  .area-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
