@@ -1,6 +1,8 @@
  /* aplicação de variaveis */
 :root {
   --bg-color: #ccc;
+  --btn-color: #56BBBF;
+  --form-color: #F2F2F2;
 }
 
 /* containerda aplicação */
@@ -8,9 +10,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-color: var(--bg-color);
+}
+
+.logo {
+  margin: 10px 0 10px 60px;
 }
 
 /* area do login */
@@ -23,22 +28,33 @@
   margin: 1.6rem 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .area-login button {
   height: 50px;
   border: none;
   border-radius: 25px;
-  width: 200px;
+  width: 250px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--btn-color);
+  color: white;
+  font-size: 16px;
 }
 
 .area-login button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(86, 187, 191, 0.7);
+  text-shadow: 1px 1px 1px black;
   transition: all 0.3s;
 }
 
 /* area do cadastro */
 .form-cadastro {
-  background-color: white;
+  background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -60,15 +76,23 @@
   border-radius: 25px;
   width: 100%;
   font-weight: bold;
+  background-color: #56BBBF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
 }
 
 .form-cadastro button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(86, 187, 191, 0.7);
+  text-shadow: 1px 1px 1px black;
   transition: all 0.3s;
 }
 
 .form-cadastro h3 {
   text-align: left;
+  font-weight: normal;
 }
 
 /** media queries - breakpoint */
@@ -76,6 +100,14 @@
   .container {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .logo {
+    margin: 10px 0 20px 50px;
+  }
+
+  .imagem img {
+    height: 300px;
   }
 
   .form-cadastro {
