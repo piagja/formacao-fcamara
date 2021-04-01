@@ -1,4 +1,5 @@
 import React from 'react'
+import Menina from '../../assets/img/menina-com-mochila.svg'
 import './Main.css'
 
 export default function Main () {
@@ -15,56 +16,51 @@ export default function Main () {
     */
     <div className='container-main'>
 
-      <div className='valores-imagem'>
+      <div className='main-como-funciona'>
 
-        <div className='valores'>
-          <p>Valores</p>
-          <p>Valores</p>
-          <p>Valores</p>
+        <div className='como-funciona'>
+          <p>Como Funciona</p>
+          <h1>Sua Doação é muito importante!</h1>
+          <br />
+          <img src={Menina} alt='Menina segurando mochila na frente' />
         </div>
 
-        <div className='imagem'>
-          <img
-            src='https://bslacademiadelideres.com.br/wp-content/uploads/2020/07/placeholder.png?v=9a5864c8040a'
-            className='img-valores'
-            alt='Imagem valores'
-          />
-        </div>
+        <div className='como-funciona-doador'>
+          <div className='doador'>
+            <p><strong>Você é doador?</strong></p>
+            <p>Então siga nosso passo a passo para que o material chegue até nosso aluno em segurança.</p>
+          </div>
 
-      </div>
+          <div className='doador-tutorial'>
+            <ul className='doador-lista'>
+              <li className='doador-lista__item'>Realize seu cadastro na plataforma.</li>
+              <li className='doador-lista__item'>Escolha um dos nosso alunos no Mural Beneficente.</li>
+              <li className='doador-lista__item'>Confirme sua doação.</li>
+              <li className='doador-lista__item'>Você receberá a confirmação no seu e-mail.</li>
+              <li className='doador-lista__item'>Guarde e organize tudo dentro do que estiver a sua disposição (caixas, sacolas...)</li>
+              <li className='doador-lista__item'>Você terá 15 dias úteis para realizar a entrega em nossa sede.
+                Ao finalizar esse prazo e não ocorrrer a doação, o aluno escolhido será recolocado no Quadro de Beneficente. Sua colaboração é muito importante.
+              </li>
+            </ul>
+          </div>
 
-      <div className='descricao-ganhar'>
+          <div className='como-funciona-cadastrar-items'>
+            <div className='como-funciona-cadastrar-items__titulo'>
+              <strong>Para Cadastrar sua Lista de Materiais</strong>
+            </div>
 
-        <div className='descricao-processo'>
-          <p>Descrição Processo</p>
-          {/* alterar isso dps */}
-          <br />
-          <hr />
-          <br />
-          <hr />
-          <br />
-          <hr />
-          <br />
-          <hr />
-          <br />
-          <hr />
-          {/* alterar isso dps */}
-        </div>
+            <div className='como-funciona-cadastrar-items__descricao'>
+              Se você está procurando onde fazer sua lista de materiais,
+              então pedimos que primeiramente realize o cadastro em
+              nossa platafiorma. Não se preocupe, suas informações estarão seguras.
+            </div>
+            <br />
+            <span>
+              Após realizar o cadastro, clique no botão Cadastre sua Lista.
+              Informe o que precisa. Ao finalizar clique em Enviar.
+            </span>
+          </div>
 
-        <div className='a-ganhar'>
-          <p>O que tem a ganhar</p>
-          {/* alterar isso dps */}
-          <br />
-          <hr />
-          <br />
-          <hr />
-          <br />
-          <hr />
-          <br />
-          <hr />
-          <br />
-          <hr />
-          {/* alterar isso dps */}
         </div>
 
       </div>

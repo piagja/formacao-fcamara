@@ -3,6 +3,7 @@
   --bg-color: #ccc;
   --btn-color: #56BBBF;
   --form-color: #F2F2F2;
+  --gradient-light_green: linear-gradient(180deg, rgba(206,245,224,1) 40%, rgba(243,234,251,1) 80%);
 }
 
 /* containerda aplicação */
@@ -10,12 +11,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100%;
+  height: 90vh;
   width: 100%;
+  background: var(--gradient-light_green);
 }
 
 .logo {
-  margin: 10px 0 10px 60px;
+  padding-left: 60px;
+  background-color: rgb(206,245,224);
 }
 
 /* area do login */
@@ -54,7 +57,7 @@ a {
 
 /* area do cadastro */
 .form-cadastro {
-  background-color: #F2F2F2;
+  background-color: var(--form-color);
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -95,15 +98,16 @@ a {
   font-weight: normal;
 }
 
-/** media queries - breakpoint */
+/** media queries **/
 @media (max-width: 750px) {
   .container {
     display: flex;
     flex-direction: column-reverse;
+    height: 100%;
   }
 
   .logo {
-    margin: 10px 0 20px 50px;
+    padding: 10px 0 20px 10px;
   }
 
   .imagem img {

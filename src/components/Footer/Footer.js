@@ -14,7 +14,7 @@ export default function Footer () {
     * ------------------------------------------------------------
     * Pode abrir o Header.js e o Header.css para se guiar também
     */
-    <div>
+    <div className='container-footer'>
       <div className='footer-title'>
         <h1>Depoimentos</h1>
       </div>
@@ -23,17 +23,6 @@ export default function Footer () {
         <CardFooter nome='Gabriel' />
         <CardFooter nome='Pedro' />
         <CardFooter nome='Catarina' />
-      </div>
-
-      <div className='footer-entrega'>
-        <h2>Realize sua entrega aqui</h2>
-        <div className='footer-entrega_area'>
-          <hr />
-          <hr />
-          <hr />
-          <hr />
-          <hr />
-        </div>
       </div>
     </div>
   )

@@ -1,93 +1,125 @@
+/** variaveis de estilos **/
+:root {
+  --title-color: #286F6B;
+}
+
+/** container da tela **/
+
 .container-main {
-  height: 100%;
+  margin-top: 100px;
+  height: 100vh;
   width: 100%;
+  background: rgb(206,245,224);
+  background: linear-gradient(177deg, rgba(206,245,224,1) 42%, rgba(243,234,251,1) 82%);
 }
 
-/* area valores e imagem */
-.valores-imagem {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
-.valores {
-  display: flex;
-  flex-direction: column;
-  align-items: space-around;
-}
+/** como funciona div */
 
-.valores p {
-  font-size: 2rem;
-  margin: 50px;
-}
-
-.imagem {
+.main-como-funciona {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.img-valores {
-  height: 450px;
-  width: 500px;
-}
+/** como funciona - lado esquerdo, da imagem da menina **/
 
-/* area descrição e o que tem a ganhar */
-.descricao-ganhar {
-  height: 85vh;
+.como-funciona {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  background-color: #D3CCCC;
-  color: white;
+  justify-content: center;
+  width: 50%;
 }
 
-hr {
-  border: 1px solid white;
+.como-funciona p {
+  width: 505px;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
 }
 
-.descricao-processo, .a-ganhar {
-  font-size: 3rem;
-  margin-top: 4rem;
+.como-funciona h1 {
+  text-align: center;
+  color: var(--title-color);
+}
+
+.como-funciona img {
+  margin-top: 10px;
+}
+
+
+/** como funciona - lado direito, como se tornar um doador **/
+
+.como-funciona-doador {
+  display: flex;
+  height: 70vh;
+  width: 55vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.doador p {
+  font-size: 16px;
+  color: #494747;
+}
+
+.doador-lista {
+  color: #5C5B59;
+}
+
+.doador p:last-of-type {
+  margin-top: 20px;
+}
+
+.doador-tutorial {
+  margin: 50px;
+  line-height: 30px;
+  height: 50vh;
+}
+
+.como-funciona-cadastrar-items__titulo {
+  text-align: left;
+  margin-bottom: 40px;
+  color: #494747;
+}
+
+.como-funciona-cadastrar-items__descricao {
+  text-align: left;
+  margin-bottom: 40px;
+  color: #7F7F7E;
+}
+
+.como-funciona-cadastrar-items span {
+  color: #5C5B59;
 }
 
 /** media queries **/
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 750px) {
   .container-main {
-    margin-top: 50px;
-  }
-  .valores-imagem {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-  
-  .valores {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  .valores p {
-    font-size: 1rem;
-    margin: 12px;
-  }
-
-  .img-valores {
-    height: 300px;
-    width: 350px;
-  }
-
-  .descricao-ganhar {
-    display: flex;
-    flex-direction: row;
     height: 100%;
+    padding: 25px;
   }
 
-  .descricao-processo, .a-ganhar {
-    font-size: 1.2rem;
-    margin: 2rem;
+  .main-como-funciona {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .como-funciona p {
+    display: none;
+  }
+
+  .main-como-funciona img {
+    height: 300px;
+  }
+
+  .como-funciona-doador {
+    height: 100%;
+    width: 100%;
   }
 }
