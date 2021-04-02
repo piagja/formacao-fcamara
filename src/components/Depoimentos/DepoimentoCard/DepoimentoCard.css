@@ -1,0 +1,48 @@
+/** variaveis de estilo **/
+:root {
+  --background-avatar-card: #DFDFB7;
+  --background-descricao-card: #F6F6CC;
+  --text-descricao: #5C5B59;
+}
+
+.cards-container {
+  display: flex;
+}
+
+.cards {
+  height: 425px;
+  width: 300px;
+  background: #aaa;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-avatar {
+  background-color: var(--background-avatar-card);
+  width: 100%;
+  text-align: center;
+}
+
+.card-avatar img {
+  padding: 25px;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.card-descricao {
+  background-color: var(--background-descricao-card);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  line-height: 30px;
+  word-spacing: 2px;
+}
+
+.card-descricao__titulo {
+  color: var(--text-descricao);
+}

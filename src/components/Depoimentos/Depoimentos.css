@@ -1,0 +1,33 @@
+/** variaveis **/
+:root {
+  --container-gradient: linear-gradient(177deg, rgba(243,234,251,1) 9%, rgba(214,221,102,1) 80%);
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  background: rgb(243,234,251);
+  background: var(--container-gradient);
+  height: 100%;
+}
+
+.container-footer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-title {
+  text-align: center;
+  margin: 50px auto;
+  color: #5C5B59;
+  letter-spacing: 30px;
+}
