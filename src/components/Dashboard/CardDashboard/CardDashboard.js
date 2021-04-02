@@ -2,7 +2,7 @@ import React from 'react'
 import './CardDashboard.css'
 
 export default function CardDashboard (props) {
-  const { nome, email, escola, mensagem, serie, telefone } = props.data
+  const { nome, email, escola, mensagem, serie } = props.data
   console.log(props)
 
   return (

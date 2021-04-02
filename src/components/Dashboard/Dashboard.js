@@ -21,8 +21,6 @@ export default function Dashboard () {
     console.log('nao existe getItem')
   }
 
-  console.log(getItem)
-
   return (
     <div className='container-dashboard'>
 
