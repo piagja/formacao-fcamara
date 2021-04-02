@@ -1,28 +1,45 @@
 import React from 'react'
 import CardDashboard from './CardDashboard/CardDashboard'
-import { Link } from 'react-router-dom'
 import './Dashboard.css'
+import { Link } from 'react-router-dom'
+const Logo = 'https://www.discoverscottishgardens.org/wp-content/uploads/2020/11/ACF-logo-placeholder.png'
 
 export default function Dashboard () {
-  const getNome = JSON.parse(localStorage.getItem('Cadastro'))
+  const getData = JSON.parse(localStorage.getItem('Cadastro'))
+  const getItem = JSON.parse(localStorage.getItem('CadastroItem'))
+  let nome, email
+
+  if (!getData) {
+    nome = 'usuario'
+    email = ''
+  } else {
+    nome = getData.nome
+    email = getData.email
+  }
+
+  if (!getItem) {
+    console.log('nao existe getItem')
+  }
+
+  console.log(getItem)
 
   return (
     <div className='container-dashboard'>
 
       <div className='dashboard-sidenav'>
-        <img src='https://www.discoverscottishgardens.org/wp-content/uploads/2020/11/ACF-logo-placeholder.png' alt='Avatar' className='dashboard-logo' />
+        <img src={Logo} alt='Avatar' className='dashboard-logo' />
 
         <div className='dashboard-sidenav__info'>
           <br />
-          <p>Bem vindo {getNome.nome}</p>
+          <p>Bem vindo {nome}</p>
           <br />
-          <p>{getNome.email}</p>
+          <p>Email: {email}</p>
           <br />
           <Link to='/'><button>Home</button></Link>
         </div>
 
         <div className='buttons'>
-          <button>Cadastre</button>
+          <Link to='/cadastro'><button>Cadastre</button></Link>
           <button>Contato</button>
         </div>
 
@@ -37,9 +54,11 @@ export default function Dashboard () {
         </div>
 
         <div className='dashboard-cards'>
-          <CardDashboard />
-          <CardDashboard />
-          <CardDashboard />
+          {getItem && getItem.map((item, index) => {
+            return (
+              <CardDashboard key={index} data={item} />
+            )
+          })}
         </div>
 
       </div>

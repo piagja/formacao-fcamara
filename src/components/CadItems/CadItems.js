@@ -1,7 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { Redirect } from 'react-router-dom'
 import './CadItems.css'
 
 export default function CadItems () {
+  const [agradecimento, setAgradecimento] = useState(false)
+
+  const defaultValues = {
+    nome: '',
+    escola: '',
+    serie: '',
+    email: '',
+    telefone: '',
+    mensagem: ''
+  }
+
+  const { register, handleSubmit, reset } = useForm({
+    defaultValues
+  })
+
+  const getLocalStorage = (data) => {
+    const dataItem = JSON.parse(localStorage.getItem('CadastroItem'))
+    if (!dataItem) {
+      localStorage.setItem('CadastroItem', JSON.stringify([data]))
+      return ''
+    } else {
+      dataItem.push(data)
+      localStorage.setItem('CadastroItem', JSON.stringify(dataItem))
+    }
+  }
+
+  const onSubmit = (data, event) => {
+    event.preventDefault()
+    getLocalStorage(data)
+    reset()
+    setAgradecimento(true)
+  }
+
   return (
     <div className='exterior-pagina'>
 
@@ -24,21 +59,22 @@ export default function CadItems () {
           <p>Ao fim, nos diga o que você precisa e sua camisa estará pronta!</p>
         </div>
 
-        <form>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className='caixa'>
             <label for='caixa'>Não se esqueça de informar:</label>
-            <input type='text' className='nome' required placeholder='Nome e Sobrenome' />
-            <input type='text' className='escola' required placeholder='Escola' />
-            <input type='text' className='serie' required placeholder='Serie' />
-            <input type='text' className='email' required placeholder='Email' />
-            <input type='text' className='telefone' required placeholder='Telefone ou Celular' />
-            <input type='text' className='material' required placeholder='O que você precisa' />
+            <input type='text' name='nome' ref={register} className='nome' required placeholder='Nome e Sobrenome' />
+            <input type='text' name='escola' ref={register} className='escola' required placeholder='Escola' />
+            <input type='text' name='serie' ref={register} className='serie' required placeholder='Serie' />
+            <input type='text' name='email' ref={register} className='email' required placeholder='Email' />
+            <input type='text' name='telefone' ref={register} className='telefone' required placeholder='Telefone' />
+            <input type='text' name='mensagem' ref={register} className='material' required placeholder='O que você precisa' />
           </div>
 
           <input type='submit' value='Bora Lá' className='botao' />
 
         </form>
 
+        {agradecimento && <Redirect to='/agradecimento' />}
       </div>
 
     </div>
