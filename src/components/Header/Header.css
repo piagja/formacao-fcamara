@@ -3,7 +3,7 @@
   --bg-color: #ccc;
   --btn-color: #56BBBF;
   --form-color: #F2F2F2;
-  --gradient-light_green: linear-gradient(180deg, rgba(206,245,224,1) 40%, rgba(243,234,251,1) 80%);
+  --gradient-light_green: linear-gradient(180deg, rgba(243,234,251,1) 40%, rgba(206,245,224,1) 80%);
 }
 
 /* containerda aplicação */
@@ -18,7 +18,7 @@
 
 .logo {
   padding-left: 60px;
-  background-color: rgb(206,245,224);
+  background-color: rgba(243,234,251,1);
 }
 
 /* area do login */
@@ -64,6 +64,7 @@ a {
   padding: 50px;
   border-radius: 25px;
   text-align: center;
+  box-shadow: 1px 1px 10px rgb(56, 59, 61);
 }
 
 .form-cadastro input {
