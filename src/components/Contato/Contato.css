@@ -1,0 +1,56 @@
+.container-contato{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient( #F8FB8A, white);    
+}
+
+.contato-pagina{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contato-textos{
+    display: flex;
+    height: 90vh;
+    width: 120vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 350px;
+}
+
+.pergunta-resposta{
+    justify-content: center;
+}
+
+.contato-perguntas-titulo {
+    color: #5C5B59;
+    font-size: 1rem;
+    text-transform: uppercase;  
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.contato-respostas-titulo{
+    color: #C66D2C;
+    font-size: 1.1rem;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.contato-endereco{
+    color: #5C5B59;
+    font-size: 1.3rem;  
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menina-papel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;  
+    padding-top: 200px;       
+}

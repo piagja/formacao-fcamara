@@ -1,0 +1,69 @@
+.container-home{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient( #FED1AE, white);          
+}
+
+.home-pagina{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.seta{
+    color: #5C5B59;
+    font-size: 24px;   
+    justify-content: flex-start;
+    align-self:flex-start;
+    padding: 95px 0 0 100px;
+    width: 2vw;
+}
+
+.voltar{
+    color: #5C5B59;
+    font-size: 1.4rem;   
+    justify-content: flex-start;
+    align-self:flex-start;
+    padding: 95px 20px 0 20px;
+    width: 20vw;
+}
+
+.home-textos{
+    display: flex;
+    height: 90vh;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.quem-somos {
+    color: #5C5B59;
+    font-size: 1.2rem;
+    text-transform: uppercase;  
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+
+.quem-somos-titulo{
+    color: #ED3669;
+    font-size: 1.8rem;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.quem-somos-texto{
+    color: #5C5B59;
+    font-size: 1.4rem;  
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menina-falando{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;     
+    padding-top: 200px;      
+}
