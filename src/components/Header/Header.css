@@ -13,6 +13,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   height: 90%;
+  padding-bottom: 70px;
   width: 100%;
   background: var(--gradient-light_green);
 }
@@ -106,6 +107,7 @@ a {
     display: flex;
     flex-direction: column-reverse;
     height: 100%;
+    padding-bottom: 10px;
   }
 
   .logo {

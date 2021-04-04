@@ -31,7 +31,7 @@ export default function Dashboard () {
           <div className='dashboard-buttons-area'>
             <Link to='/' className='dashboard-buttons-link'>Home</Link>
             <Link to='/cadastro' className='dashboard-buttons-link'>Cadastre</Link>
-            <Link>Contato</Link>
+            <Link to='/contato'>Contato</Link>
           </div>
         </div>
 

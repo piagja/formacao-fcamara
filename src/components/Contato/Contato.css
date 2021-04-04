@@ -4,6 +4,15 @@
     background: linear-gradient( #F8FB8A, white);    
 }
 
+.contato-voltar {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 10px 0 0 20px;
+  color:#5C5B59;
+  font-weight: bold;
+}
+
 .contato-pagina{
     width: 100%;
     height: 100vh;
