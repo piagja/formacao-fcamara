@@ -55,7 +55,7 @@ export default function Dashboard () {
         <div className='dashboard-titulo-pesquisa'>
           <h1>Mural Beneficente.</h1>
           <h2>CONHEÇA UM ALUNO</h2>
-          <input type='text' placeholder='Pesquise (Escola, Nome, Série...)' onChange={getSearchTerm} />
+          <input type='text' placeholder='Pesquise (Escola, Nome, Série...)' />
         </div>
 
         <div className='dashboard-cards'>
