@@ -1,10 +1,10 @@
 import React from 'react'
 import Menina from '../../assets/img/menina-falando.svg'
 import Arrow1 from '../../assets/img/arrow-1.png'
-import './Home.css'
 import { Link } from 'react-router-dom'
+import './QuemSomos.css'
 
-export default function Home () {
+export default function QuemSomos () {
   return (
     <div className='container-home'>
 
@@ -15,7 +15,7 @@ export default function Home () {
         </div>
 
         <div className='voltar'>
-          <h3><Link to='/dashboard'>Voltar</Link></h3>
+          <h3><Link to='/'>Voltar</Link></h3>
         </div>
 
         <div className='home-textos'>
@@ -44,10 +44,9 @@ export default function Home () {
             </p>
           </div>
 
-          <div className='menina-falando'>
-            <img src={Menina} alt='Menina falando ao megafone' />
-          </div>
-
+        </div>
+        <div className='menina-falando'>
+          <img src={Menina} alt='Menina falando ao megafone' />
         </div>
 
       </div>

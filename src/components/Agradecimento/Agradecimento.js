@@ -20,7 +20,7 @@ const Agradecimento = () => {
             <div className='confirmacao-area-doacao'>
               <p>Agradecemos a sua doação!</p>
               <h2>Você é nota 10</h2>
-              <h3>Seu código de doador:<br /> <strong>#0000</strong></h3>
+              <h3>Seu código de doador:<br /> <strong>#{Math.floor(Math.random() * 9999)}</strong></h3>
             </div>
 
             <div className='confirmacao-area-orientacao'>
@@ -42,7 +42,8 @@ const Agradecimento = () => {
         </div>
 
         <div className='confirmacao-voltar'>
-          <p><FiArrowLeft size={30} /><Link to='/dashboard'>Voltar</Link></p>
+          <FiArrowLeft size={30} />
+          <span><Link to='/dashboard'>Voltar</Link></span>
         </div>
 
       </div>

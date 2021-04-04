@@ -60,12 +60,13 @@
 }
 
 .confirmacao-voltar {
-  border: 1px solid black;
   display: flex;
+  align-items: center;
 }
 
-.confirmacao-voltar p {
+.confirmacao-voltar span {
   font-size: 2rem;
+  margin-left: 16px;
 }
 
 /** media-queries **/

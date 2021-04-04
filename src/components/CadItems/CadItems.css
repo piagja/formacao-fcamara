@@ -129,3 +129,52 @@
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.419);
   transform: scale(1.03);
 }
+
+@media (max-width: 750px) {
+  .cadastro-logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cadastro-logo img {
+    margin-bottom: 18px;
+  }
+
+  .cadastro-card {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+  }
+
+  .cadastro-lista {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .cadastro-lista h1 {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .cadastro-lista h2 {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .cadastro-lista-area {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .cadastro-lista-area_items {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .cadastro-form {
+    padding: 0;
+  }
+}
