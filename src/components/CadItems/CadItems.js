@@ -61,7 +61,7 @@ export default function CadItems () {
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='caixa'>
-            <label for='caixa'>Não se esqueça de informar:</label>
+            <label>Não se esqueça de informar:</label>
             <input type='text' name='nome' ref={register} className='nome' required placeholder='Nome e Sobrenome' />
             <input type='text' name='escola' ref={register} className='escola' required placeholder='Escola' />
             <input type='text' name='serie' ref={register} className='serie' required placeholder='Serie' />

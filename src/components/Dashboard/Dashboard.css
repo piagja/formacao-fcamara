@@ -1,3 +1,11 @@
+:root {
+  --btn-sidenav-color: #007EFF;
+}
+
+a {
+  color: inherit;
+}
+
 /** area inteira do dashboard */
 
 .container-dashboard {
@@ -8,54 +16,77 @@
 /** menu lateral - avatar, info do logado, botões, espaçamentos*/
 
 .dashboard-sidenav {
-  background-color: #ccc;
+  background: rgb(243,234,251);
+  background: linear-gradient(180deg, rgba(243,234,251,1) 9%, rgba(162,217,220,1) 80%);
   height: 100%;
-  width: 300px;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
-.dashboard-sidenav__info button {
-  height: 55px;
-  width: 100%;
-  border-radius: 5px;
-  border: none;
-  border-left: 2px solid #ddd;
-  margin-top: 50px;
-  font-weight: bold;
-}
-
-.dashboard-sidenav__info button:hover {
-  background-color: #aaa;
-  transition: all 0.3s;
-}
-
 .dashboard-logo {
-  height: 170px;
-  width: 170px;
-  border-radius: 50%;
+  height: 100%x;
+  width: 100%;
 }
 
-.buttons {
+.dashboard-buttons {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   width: 100%;
 }
 
-.buttons button {
-  height: 55px;
-  width: 100%;
+.dashboard-buttons-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-buttons-area button {
+  border-left: 2px solid var(--btn-sidenav-color);
+  background-color: var(--btn-sidenav-color);
+  color: white;
+  height: 60px;
   border-radius: 5px;
   border: none;
-  border-left: 2px solid #ddd;
   font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 50px;
 }
+
+.dashboard-buttons-area button:last-of-type {
+  margin-bottom: 20rem;
+} 
 
 .buttons button:hover {
   background-color: #aaa;
   transition: all 0.3s;
+}
+
+/** media queries do sidenav */
+@media (max-width: 750px) {
+  .container-dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard-sidenav {
+    width: 100%;
+    display: flex;
+  }
+
+  .dashboard-buttons-area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .dashboard-buttons-area button {
+    margin: 40px 20px;
+    height: 50px;
+    width: 80px;
+    font-size: 12px;
+  }
 }
 
 /** a area do dashboard */
@@ -64,22 +95,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 15px;
 }
 
 /** area de cima do dashboard */
 .dashboard-main_top {
+  background-color: blue;
+  color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  width: 80vw;
+  width: 85vw;
 }
 
-.dashboard-main_top input {
-  margin: 50px;
+.dashboard-main_top img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.dashboard-titulo-pesquisa {
+  height: 25%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.dashboard-titulo-pesquisa h1 {
+  color: #5C5B59;
+}
+
+.dashboard-titulo-pesquisa h2 {
+  color: #494747;
+}
+
+.dashboard-titulo-pesquisa input {
   height: 35px;
   width: 350px;
+}
+
+.dashboard-titulo-pesquisa input::placeholder {
+  font-size: 20px;
+  opacity: 0.4;
+}
+
+.dashboard-navbar p {
+  margin-top: 15px;
+}
+
+.dashboard-navbar-check {
+  margin: 0 5rem;
 }
 
 /** area aonde os cards são inseridos */
@@ -87,4 +154,25 @@
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
+}
+
+/** media queries dashboard */
+@media (max-width: 750px) {
+  .dashboard-main_top {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dashboard-titulo-pesquisa {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .dashboard-titulo-pesquisa input {
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+  }
+
 }

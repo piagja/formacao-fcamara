@@ -22,7 +22,7 @@ export default function Header () {
 
   const onSubmit = data => {
     localStorage.setItem('Cadastro', JSON.stringify(data))
-    console.log(data)
+    window.alert('Cadastrado com sucesso!\nAgora faça seu login!')
     reset()
   }
 
