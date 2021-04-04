@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Redirect } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import Logo from '../../assets/img/logo.svg'
 import './CadItems.css'
 
@@ -42,6 +42,7 @@ export default function CadItems () {
     <>
       <div className='cadastro-logo'>
         <img src={Logo} alt='Logotipo Doação Nota Dez - Parte do Cadastro de Itens' />
+        <Link to='/dashboard'>Voltar</Link>
       </div>
 
       <div className='cadastro-container'>

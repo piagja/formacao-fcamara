@@ -44,7 +44,7 @@ export default function Dashboard () {
 
           <div className='dashboard-navbar'>
             <p>Bem vindo {nome}</p>
-            <p>Email:{email}</p>
+            <p>Email: {email}</p>
           </div>
 
           <div className='dashboard-navbar-check'>

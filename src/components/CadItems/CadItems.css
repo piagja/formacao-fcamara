@@ -1,5 +1,22 @@
 .cadastro-logo {
-  background: rgba(255,229,229,1) ;
+  background: rgba(255,229,229,1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cadastro-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: #5C5B59;
+  text-shadow: 1px 1px black;
+}
+
+.cadastro-logo a:hover {
+  transition: all 400ms;
+  transform: scale(1.2);
+  text-shadow: 5px 5px 7px #5C5B59;
 }
 
 /** container */
@@ -104,4 +121,11 @@
   font-size: 20px;
   font-weight: bold;
   margin-top: 35px;
+}
+
+.cadastro-button input:hover {
+  transition: all ease-in-out 200ms;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.419);
+  transform: scale(1.03);
 }
