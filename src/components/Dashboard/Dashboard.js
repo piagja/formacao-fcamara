@@ -17,10 +17,6 @@ export default function Dashboard () {
     setSearchTerm(event.target.value)
   }
 
-  const searchingTerm = () => {
-    console.log('input')
-  }
-
   let nome, email
 
   if (!getData) {
@@ -71,7 +67,7 @@ export default function Dashboard () {
         <div className='dashboard-cards'>
           {getItem && getItem.map((item, index) => {
             return (
-              <CardDashboard key={index} data={item} search={searchingTerm()} />
+              <CardDashboard key={index} data={item} />
             )
           })}
         </div>
