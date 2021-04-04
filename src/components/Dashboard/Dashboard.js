@@ -11,12 +11,6 @@ export default function Dashboard () {
   const getData = JSON.parse(localStorage.getItem('Cadastro'))
   const getItem = JSON.parse(localStorage.getItem('CadastroItem'))
 
-  const [searchTerm, setSearchTerm] = useState('')
-
-  const getSearchTerm = (event) => {
-    setSearchTerm(event.target.value)
-  }
-
   let nome, email
 
   if (!getData) {
