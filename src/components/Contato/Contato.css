@@ -54,3 +54,52 @@
     width: 40vw;  
     padding-top: 200px;       
 }
+
+@media (max-width: 750px) {
+  .contato-pagina{
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .contato-textos {
+    margin: 20px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: space-between;
+  }
+
+  .contato-textos p {
+    font-size: 16px;
+    margin: 6px;
+  }
+
+  .pergunta-resposta {
+    margin: 12px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pergunta-resposta h1 {
+    font-size: 28px;
+  }
+
+  .pergunta-resposta h3 {
+    font-size: 16px;
+  }
+
+  .contato-endereco {
+    display: flex;
+    text-align: center;
+  }
+
+  .menina-papel {
+    height: 100px;
+  }
+
+  .menina-papel img {
+    height: 300px;
+  }
+}
