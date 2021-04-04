@@ -36,7 +36,7 @@ export default function Header () {
         <div className='area-login'>
           <p>Já faz parte da nossa família?</p>
           <p>Então sinta-se Bem Vindo</p>
-          <Link to='/dashboard'><button>Faça seu Login<FiArrowRight size={30} /></button></Link>
+          <Link to='/login'><button>Faça seu Login<FiArrowRight size={30} /></button></Link>
         </div>
 
         <div className='area-imagem'>

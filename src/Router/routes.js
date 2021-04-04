@@ -5,6 +5,7 @@ import Main from '../components/Main/Main'
 import Depoimentos from '../components/Depoimentos/Depoimentos'
 import Agradecimento from '../components/Agradecimento/Agradecimento'
 import CadItems from '../components/CadItems/CadItems'
+import Login from '../components/Login/Login'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ const Routes = () => {
         <Route path='/dashboard' component={Dashboard} />
         <Route path='/cadastro' component={CadItems} />
         <Route path='/agradecimento' component={Agradecimento} />
+        <Route path='/login' component={Login} />
       </Switch>
     </BrowserRouter>
   )
