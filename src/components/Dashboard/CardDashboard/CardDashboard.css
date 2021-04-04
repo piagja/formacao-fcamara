@@ -3,8 +3,8 @@
 }
 
 .quadro-info {
-  height: 350px;
-  width: 300px;
+  height: 400px;
+  width: 350px;
   box-shadow: 1px 1px 15px rgb(83, 71, 90);
   background-color: #ffffff;
   display: flex;
@@ -15,12 +15,12 @@
   margin: 20px;
   border-radius: 10px;
   border: none;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .quadro-info img {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 
 .quadro-info:hover {
@@ -47,4 +47,26 @@
   text-align: center;
   margin-bottom: 25px;
   margin-top: -10px;
+}
+
+/** media queries */
+@media (max-width: 750px) {
+  .quadro {
+    display: flex;
+  }
+
+  .quadro-info {
+    height: 350px;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .quadro-itens {
+    display: flex;
+    height: 100%;
+  }
+  
+  .quadro-info img {
+    display: none;
+  }
 }

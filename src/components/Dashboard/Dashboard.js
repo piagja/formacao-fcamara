@@ -24,7 +24,7 @@ export default function Dashboard () {
   let nome, email
 
   if (!getData) {
-    nome = 'Entre com a sua conta'
+    nome = 'usuário'
     email = ''
   } else {
     nome = getData.nome
@@ -39,9 +39,9 @@ export default function Dashboard () {
 
         <div className='dashboard-buttons'>
           <div className='dashboard-buttons-area'>
-            <button><Link to='/'>Home</Link></button>
-            <button><Link to='/cadastro'>Cadastre</Link></button>
-            <button>Contato</button>
+            <Link to='/' className='dashboard-buttons-link'>Home</Link>
+            <Link to='/cadastro' className='dashboard-buttons-link'>Cadastre</Link>
+            <Link>Contato</Link>
           </div>
         </div>
 
@@ -53,8 +53,8 @@ export default function Dashboard () {
           <img src={AvatarPerfil} alt='Avatar do Usuário Logado' />
 
           <div className='dashboard-navbar'>
-            {nome}
-            <p>Editar</p>
+            <p>Bem vindo {nome}</p>
+            <p>Email:{email}</p>
           </div>
 
           <div className='dashboard-navbar-check'>
@@ -64,7 +64,7 @@ export default function Dashboard () {
         </div>
         <div className='dashboard-titulo-pesquisa'>
           <h1>Mural Beneficente.</h1>
-          <h2>ESCOLHA UM ALUNO</h2>
+          <h2>CONHEÇA UM ALUNO</h2>
           <input type='text' placeholder='Pesquise (Escola, Nome, Série...)' onChange={getSearchTerm} />
         </div>
 

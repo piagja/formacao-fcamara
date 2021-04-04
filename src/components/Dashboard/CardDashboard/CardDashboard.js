@@ -3,7 +3,7 @@ import LogoCrianca from '../../../assets/img/mock-aluno.png'
 import './CardDashboard.css'
 
 export default function CardDashboard (props) {
-  const { nome, email, escola, mensagem, serie } = props.data
+  const { nome, email, escola, mensagem, serie, telefone } = props.data
 
   return (
     <div className='quadro'>
@@ -15,6 +15,7 @@ export default function CardDashboard (props) {
             <p><strong>Email:</strong> {email}</p>
             <p><strong>Escola:</strong> {escola}</p>
             <p><strong>Série:</strong> {serie}</p>
+            <p><strong>Telefone:</strong> {telefone}</p>
             <br />
             <p><strong>Mensagem:</strong> {mensagem}</p>
           </div>

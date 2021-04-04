@@ -27,7 +27,7 @@ a {
 }
 
 .dashboard-logo {
-  height: 100%x;
+  height: 100%;
   width: 100%;
 }
 
@@ -42,7 +42,7 @@ a {
   flex-direction: column;
 }
 
-.dashboard-buttons-area button {
+.dashboard-buttons-area a {
   border-left: 2px solid var(--btn-sidenav-color);
   background-color: var(--btn-sidenav-color);
   color: white;
@@ -52,13 +52,16 @@ a {
   font-weight: bold;
   font-size: 1.3rem;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.dashboard-buttons-area button:last-of-type {
+.dashboard-buttons-area a:last-of-type {
   margin-bottom: 20rem;
 } 
 
-.buttons button:hover {
+.buttons a:hover {
   background-color: #aaa;
   transition: all 0.3s;
 }
@@ -69,24 +72,29 @@ a {
     display: flex;
     flex-direction: column;
   }
-
-  .dashboard-sidenav {
-    width: 100%;
-    display: flex;
+  
+  .dashboard-logo {
+    display: none;
   }
-
+  
+  .dashboard-sidenav {
+    width: 100vw;
+  }
+  
   .dashboard-buttons-area {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
   }
-
-  .dashboard-buttons-area button {
-    margin: 40px 20px;
+  
+  .dashboard-buttons-area a {
     height: 50px;
-    width: 80px;
-    font-size: 12px;
+    width: 120px;
   }
+  
+  .dashboard-buttons-area a:last-of-type {
+    margin-bottom: 2rem;
+  }   
 }
 
 /** a area do dashboard */
@@ -95,6 +103,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgb(243,234,251);
+  background: linear-gradient(180deg, rgba(243,234,251,1) 10%, rgb(206, 253, 255) 80%);
 }
 
 /** area de cima do dashboard */
@@ -108,8 +118,8 @@ a {
 }
 
 .dashboard-main_top img {
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   margin-right: 25px;
 }
@@ -143,15 +153,38 @@ a {
 
 .dashboard-navbar p {
   margin-top: 15px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 .dashboard-navbar-check {
   margin: 0 5rem;
 }
 
+/** media queries titulo, pesquisa e parte do topo */
+@media (max-width: 750px) {
+  .dashboard-navbar p {
+    margin-left: 18px;
+  }
+  
+  .dashboard-titulo-pesquisa {
+    height: 200px;
+  }
+
+  .dashboard-titulo-pesquisa h1 {
+    margin-bottom: 12px;
+  }
+  
+  .dashboard-titulo-pesquisa h2 {
+    margin-bottom: 12px;
+  }
+}
+
 /** area aonde os cards são inseridos */
 .dashboard-cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
 }
@@ -174,5 +207,4 @@ a {
     width: 100%;
     border-bottom: 2px solid #ccc;
   }
-
 }
