@@ -1,0 +1,93 @@
+.container-home {
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient( #FED1AE, white);          
+  }
+
+.seta {
+    color: #5C5B59;
+    font-size: 24px;   
+    justify-content: flex-start;
+    align-self:flex-start;
+    padding: 95px 0 0 100px;
+    width: 2vw;
+  }
+
+.voltar {
+  color: #5C5B59;
+  font-size: 1.4rem;
+  padding: 93.5px 18px 0 30px;
+  align-self: flex-start;
+  width: 20vw;
+  }
+
+.home-pagina {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+.home-textos {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: space-between;
+    margin-right: 30px;
+  }
+
+.quem-somos-titulo {
+    color: #ED3669;
+    font-size: 1.8rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 22px;    
+  }
+
+.quem-somos-texto {
+    color: #5C5B59;
+    font-size: 1.4rem;  
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.menina-falando {
+    width: 10vw;     
+    padding-top: 20px;      
+  }
+
+/** media queries */
+
+@media (max-width: 750px) {  
+  .home-pagina {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seta {
+    display: none;
+  }
+
+  .voltar {
+    margin: 5px 0 25px 25px;
+    padding: 0;
+  }
+
+  .quem-somos-titulo {
+    font-size: 1.2rem;  
+  }
+
+  .quem-somos-texto {
+    color: #5C5B59;
+    font-size: 18px;
+  }
+
+  .quem-somos-texto p {
+    margin: 10px;
+  }
+
+  .menina-falando img { 
+    height: 300px;
+    margin-left: 50px;
+  }
+}
