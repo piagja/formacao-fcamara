@@ -1,69 +1,107 @@
-.exterior-pagina{
-    background-color: lightgray;
+.cadastro-logo {
+  background: rgba(255,229,229,1) ;
 }
 
-.exterior-logo{
-    position: relative;
-    left: 2%;
-}
-
-.interior-pagina{
-    background-color: white;
-    border-radius: 30px 30px 0px 0px;
-    width: 80%;
-    text-align: center;
-    position: relative;
-    left: 10%;
-}
-
-.titulo-principal{
-    padding: 50px;    
-}
-
-.subtitulo-principal p{
-    margin-top: 10px;
-}
-
-form {
-	margin: 40px 0 0 10px;
-    display: block;
-    
-}
-
-.caixa{
-    width: 95%;
-
-}
-
-label{
-    position: relative;
-    left: 10%;
-    display: block;
-    text-align: left;
-}
-
-input{
-    border:none;    
+/** container */
+.cadastro-container {
+  background: rgba(243,234,251,1);
+  background: linear-gradient(180deg, rgba(255,229,229,1) 9%, rgba(243,234,251,1) 80%);
 }
 
 
-.nao-esqueca, .nome, .escola, .serie, .email, .telefone {
-    width: 80%;
-    padding: 20px 0 20px 0;
-    background-color: lightgrey;
+/** div que pega o lado esquerdo e direito */
+.cadastro-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.material{
-    width: 80%;
-    padding: 200px 0 200px 0;   
-    background-color: lightgrey;
+/** container do cadastro e da lista */
+.cadastro-card {
+  display: flex;
+  background-color: #F3F2F2;
+  border-radius: 43px;
+  height: 800px;
+  width: 80vw;
 }
 
-.botao{
-    background-color: dimgray;
-    color: white;
-    padding: 10px 100px;
-    border-radius: 20px;
-    font-size: 20px;
-    margin: 50px 0 50px 0px;
+/** bloco da lista inteira */
+.cadastro-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 80px 0 0 70px;
+}
+
+.cadastro-lista h1 {
+  margin-bottom: 30px;
+  color: #5C5B59;
+}
+
+.cadastro-lista h2 {
+  margin-bottom: 22px;
+  color: #5C5B59;
+}
+
+/** bloco da lista (ul) */
+.cadastro-lista-area {
+  list-style-type: none;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+/** items da lista (ul) */
+.cadastro-lista-area_items {
+  padding: 30px 10px 10px 10px;
+  width: 40vw;
+}
+
+/** area do cadastro - form */
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.cadastro-form-card {
+  height: 35rem;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cadastro-form-card input {
+  padding: 20px;
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin: 22px;
+}
+
+.cadastro-form-card input::placeholder {
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.cadastro-button {
+  display: flex;
+  justify-content: center;
+}
+
+.cadastro-button input {
+  height: 60px;
+  width: 280px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: #56BBBF;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 35px;
 }

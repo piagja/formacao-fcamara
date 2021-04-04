@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { Redirect } from 'react-router-dom'
+import Logo from '../../assets/img/logo.svg'
 import './CadItems.css'
 
 export default function CadItems () {
@@ -38,45 +39,48 @@ export default function CadItems () {
   }
 
   return (
-    <div className='exterior-pagina'>
-
-      <div className='exterior-logo'>
-        <img
-          src='https://www.discoverscottishgardens.org/wp-content/uploads/2020/11/ACF-logo-placeholder.png'
-          alt='avatar'
-          className='menu-logo'
-        />
+    <>
+      <div className='cadastro-logo'>
+        <img src={Logo} alt='Logotipo Doação Nota Dez - Parte do Cadastro de Itens' />
       </div>
 
-      <div className='interior-pagina'>
+      <div className='cadastro-container'>
+        <div className='cadastro-card'>
+          <div className='cadastro-lista'>
+            <h1>SUA LISTA</h1>
+            <h2>Coloque as informações corretas nas caixas.</h2>
 
-        <div className='titulo-principal'>
-          <h2>Nos informe sobre você</h2>
-        </div>
-
-        <div className='subtitulo-principal'>
-          <p>Coloque nesta caixa suas informações de contato, nome, escola e série.</p>
-          <p>Ao fim, nos diga o que você precisa e sua camisa estará pronta!</p>
-        </div>
-
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className='caixa'>
-            <label>Não se esqueça de informar:</label>
-            <input type='text' name='nome' ref={register} className='nome' required placeholder='Nome e Sobrenome' />
-            <input type='text' name='escola' ref={register} className='escola' required placeholder='Escola' />
-            <input type='text' name='serie' ref={register} className='serie' required placeholder='Serie' />
-            <input type='text' name='email' ref={register} className='email' required placeholder='Email' />
-            <input type='text' name='telefone' ref={register} className='telefone' required placeholder='Telefone' />
-            <input type='text' name='mensagem' ref={register} className='material' required placeholder='O que você precisa' />
+            <ul className='cadastro-lista-area'>
+              <li className='cadastro-lista-area_items'>- Reveja os dados que você colocou</li>
+              <li className='cadastro-lista-area_items'>- Se você é doador, coloque os itens que você possui para doar no campo "Mensagem"</li>
+              <li className='cadastro-lista-area_items'>- Se você precisa de doação, seja sincero e direto no campo "Mensagem"</li>
+              <li className='cadastro-lista-area_items'>- Verifique a disponibilidade de contato, email ou telefone</li>
+              <li className='cadastro-lista-area_items'>- Não esqueça de deixar uma mensagem</li>
+            </ul>
           </div>
 
-          <input type='submit' value='Bora Lá' className='botao' />
+          <div className='cadastro-form'>
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <div className='cadastro-form-card'>
+                <input type='text' name='nome' ref={register} required placeholder='Nome Completo' />
+                <input type='text' name='escola' ref={register} required placeholder='Escola' />
+                <input type='text' name='serie' ref={register} required placeholder='Série' />
+                <input type='text' name='email' ref={register} required placeholder='Seu Email' />
+                <input type='text' name='telefone' ref={register} required placeholder='Seu Telefone' />
+                <input type='text' name='mensagem' ref={register} required placeholder='Mensagem' />
+              </div>
+              <div className='cadastro-button'>
+                <input type='submit' value='Cadastrar' />
+              </div>
 
-        </form>
+            </form>
 
-        {agradecimento && <Redirect to='/agradecimento' />}
+            {agradecimento && <Redirect to='/agradecimento' />}
+          </div>
+
+        </div>
+
       </div>
-
-    </div>
+    </>
   )
 }
