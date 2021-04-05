@@ -8,6 +8,7 @@
     color: #5C5B59;
     align-self: flex-start;
     margin: 50px;
+    display: none;
   }
 
 .seta img {
@@ -19,11 +20,13 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
 .home-textos {
     display: flex;
     flex-direction: column;
+    width: 50%;
     margin-right: 30px;
   }
 
@@ -42,10 +45,6 @@
     justify-content: center;
   }
 
-.menina-falando {
-    width: 100%;
-  }
-
 /** media queries */
 
 @media (max-width: 750px) {  
@@ -61,6 +60,7 @@
     justify-content: center;
     margin: 0;
     padding: 12px;
+    width: 90%;
   }
 
   .seta {

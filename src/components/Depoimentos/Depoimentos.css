@@ -32,3 +32,18 @@
   color: #5C5B59;
   margin-bottom: 18px;
 }
+
+.seta-depoimento {
+  width: 100%;
+  text-align: right;
+  padding-right: 30px;
+  height: 80px;
+  color: #5C5B59;
+}
+
+@media (max-width: 750px) {
+  .seta-depoimento {
+    padding: 0;
+    text-align: center;
+  }
+}

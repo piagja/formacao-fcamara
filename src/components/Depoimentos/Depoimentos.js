@@ -21,8 +21,8 @@ export default function Depoimentos () {
           <DepoimentoCard nome='Simone Prado Santiago' mensagem='“Obrigada, Doação Nota 10!!!! Todos os anos eu faço doação do material da minha filha de forma rápida e organizada.” ' />
 
         </div>
-        <div className='seta'>
-          <a href='#header'><FiArrowUp size={30} /></a>
+        <div className='seta-depoimento'>
+          <a href='#header'><FiArrowUp size={50} /></a>
         </div>
       </div>
     </>
