@@ -19,7 +19,7 @@ export default function Main () {
       <div className='main-como-funciona'>
 
         <div className='como-funciona'>
-          <p>Como Funciona</p>
+          <p>Como Funciona?</p>
           <h1>Sua Doação é muito importante!</h1>
           <br />
           <img src={Menina} alt='Menina segurando mochila na frente' />

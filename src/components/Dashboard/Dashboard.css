@@ -44,7 +44,6 @@ a {
 }
 
 .dashboard-buttons-area a {
-  border-left: 2px solid var(--btn-sidenav-color);
   background-color: var(--btn-sidenav-color);
   color: white;
   height: 60px;
@@ -62,8 +61,8 @@ a {
   margin-bottom: 20rem;
 } 
 
-.buttons a:hover {
-  background-color: #aaa;
+.dashboard-buttons-area a:hover {
+  background-color: #0080ff87;
   transition: all 0.3s;
 }
 
@@ -211,5 +210,9 @@ a {
   .dashboard-titulo-pesquisa input {
     width: 100%;
     border-bottom: 2px solid #ccc;
+  }
+
+  .dashboard-cards {
+    margin-bottom: 30px;
   }
 }

@@ -12,9 +12,7 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  margin: 20px;
-  border-radius: 10px;
-  border: none;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -57,13 +55,14 @@
 
   .quadro-info {
     height: 350px;
-    width: 100%;
+    min-width: 100%;
     overflow: auto;
   }
 
   .quadro-itens {
     display: flex;
     height: 100%;
+    align-items: flex-start;
   }
   
   .quadro-info img {

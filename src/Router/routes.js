@@ -18,7 +18,6 @@ const Routes = () => {
       <Route exact path='/' component={QuemSomos} />
       <Route exact path='/' component={Main} />
       <Route exact path='/' component={Depoimentos} />
-      <Route exact path='/' component={Contato} />
       <Switch>
         <Route path='/dashboard' component={Dashboard} />
         <Route path='/cadastro' component={CadItems} />
