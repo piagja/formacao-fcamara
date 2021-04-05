@@ -1,13 +1,11 @@
 import React from 'react'
 import Menina from '../../assets/img/menina-papel.svg'
-
-import { FiArrowLeft } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import './Contato.css'
 
 export default function Contato () {
   return (
-    <div className='container-contato'>
+    <div id='contato' className='container-contato'>
       <div className='contato-voltar'>
         <span><Link to='/dashboard'>Voltar</Link></span>
       </div>

@@ -28,8 +28,9 @@ export default function Header () {
 
   return (
     <>
-      <div className='logo'>
+      <div id='header' className='logo'>
         <img src={Logo} alt='Logotipo do website Doação Nota 10' />
+        <a href='#contato'>Contato</a>
       </div>
       <div className='container'>
 

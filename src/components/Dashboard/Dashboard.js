@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineCheck } from 'react-icons/ai'
 import CardDashboard from './CardDashboard/CardDashboard'
@@ -20,6 +20,21 @@ export default function Dashboard () {
     nome = getData.nome
     email = getData.email
   }
+
+  /**
+   * lógica da procura dos cards
+   */
+
+  const [searchResults, setSearchResults] = useState(getItem)
+
+  const updatedItem = useCallback((event) => {
+    const results = searchResults.filter(item => item.mensagem.includes(event.target.value))
+    setSearchResults(results)
+
+    if (!event.target.value) {
+      setSearchResults(getItem)
+    }
+  }, [searchResults, getItem])
 
   return (
     <div className='container-dashboard'>
@@ -55,11 +70,11 @@ export default function Dashboard () {
         <div className='dashboard-titulo-pesquisa'>
           <h1>Mural Beneficente.</h1>
           <h2>CONHEÇA UM ALUNO</h2>
-          <input type='text' placeholder='Pesquise (Escola, Nome, Série...)' />
+          <input type='text' placeholder='Pesquise (Escola, Nome, Série...)' onChange={(e) => updatedItem(e)} />
         </div>
 
         <div className='dashboard-cards'>
-          {getItem && getItem.map((item, index) => {
+          {searchResults && searchResults.map((item, index) => {
             return (
               <CardDashboard key={index} data={item} />
             )

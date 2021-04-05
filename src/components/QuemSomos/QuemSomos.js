@@ -6,16 +6,12 @@ import './QuemSomos.css'
 
 export default function QuemSomos () {
   return (
-    <div className='container-home'>
+    <div id='quemsomos' className='container-home'>
 
       <div className='home-pagina'>
 
         <div className='seta'>
-          <img src={Arrow1} alt='seta à esquerda' />
-        </div>
-
-        <div className='voltar'>
-          <h3><Link to='/'>Voltar</Link></h3>
+          <a href='#header'><img src={Arrow1} alt='seta à esquerda' /></a>
         </div>
 
         <div className='home-textos'>

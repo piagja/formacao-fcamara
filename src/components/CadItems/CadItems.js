@@ -68,7 +68,7 @@ export default function CadItems () {
                 <input type='text' name='serie' ref={register} required placeholder='Série' />
                 <input type='text' name='email' ref={register} required placeholder='Seu Email' />
                 <input type='text' name='telefone' ref={register} required placeholder='Seu Telefone' />
-                <input type='text' name='mensagem' ref={register} required placeholder='Mensagem' />
+                <input type='text' name='mensagem' ref={register} maxLength='300' required placeholder='Mensagem: 300 Caracteres no máximo' />
               </div>
               <div className='cadastro-button'>
                 <input type='submit' value='Cadastrar' />

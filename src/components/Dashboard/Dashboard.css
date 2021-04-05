@@ -35,6 +35,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  cursor: pointer;
 }
 
 .dashboard-buttons-area {
@@ -100,6 +101,7 @@ a {
 /** a area do dashboard */
 
 .dashboard-main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +116,7 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 85vw;
+  width: 100%;
 }
 
 .dashboard-main_top img {
@@ -143,12 +145,15 @@ a {
 
 .dashboard-titulo-pesquisa input {
   height: 35px;
-  width: 350px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
 }
 
 .dashboard-titulo-pesquisa input::placeholder {
   font-size: 20px;
   opacity: 0.4;
+  padding-left: 10px;
 }
 
 .dashboard-navbar p {
